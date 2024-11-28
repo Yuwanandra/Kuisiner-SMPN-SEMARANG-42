@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a237e !important; /* Match the blue background */
+}
+
+.card.bg-orange {
+    background-color: #ff6f00; /* Orange color for card background */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card table {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card table th {
+    background-color: #ff8f00;
+    color: white;
+    text-align: center;
+}
+
+.card table td input {
+    transform: scale(1.5);
+}

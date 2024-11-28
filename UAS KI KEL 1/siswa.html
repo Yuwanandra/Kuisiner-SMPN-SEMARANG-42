@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner Penilaian Guru - SMP Negeri 42</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist\css\bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="custom_siswa.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('assets/background.jpg'); /* Correct file path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-primary text-white">
+    <!-- Header -->
+    <header class="container py-3 d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+            <img src="assets/logo.png" alt="Logo SMP Negeri 42" style="max-width: 50px;">
+            <h1 class="ms-3 fs-4">SMP Negeri 42 Semarang</h1>
+        </div>
+        <a href="login.html" class="btn btn-light btn-sm">Kembali</a>
+    </header>
+
+    <!-- Content -->
+    <main class="container py-4">
+        <div class="card p-4 bg-orange text-dark" style="border-radius: 25px;">
+            <h2 class="text-center mb-3 fw-bold">Kuisioner Penilaian Guru</h2>
+            <p class="text-center mb-4">Sekolah Menengah Pertama Negeri 42 Semarang</p>
+
+            <!-- Form Section -->
+            <form>
+                <!-- Class Selection -->
+                <div class="mb-4">
+                    <label for="kelas" class="fw-bold">Kelas Anda:</label>
+                    <div class="form-check">
+                        <input type="checkbox" id="kelasVII" class="form-check-input">
+                        <label for="kelasVII" class="form-check-label">VII</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="kelasVIII" class="form-check-input">
+                        <label for="kelasVIII" class="form-check-label">VIII</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="kelasIX" class="form-check-input">
+                        <label for="kelasIX" class="form-check-label">IX</label>
+                    </div>
+                </div>
+
+                <!-- Gender Selection -->
+                <div class="mb-4">
+                    <label for="gender" class="fw-bold">Jenis Kelamin:</label>
+                    <div class="form-check">
+                        <input type="radio" id="male" name="gender" class="form-check-input">
+                        <label for="male" class="form-check-label">Laki-laki</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" id="female" name="gender" class="form-check-input">
+                        <label for="female" class="form-check-label">Perempuan</label>
+                    </div>
+                </div>
+
+                <!-- Instructions -->
+                <p class="fw-bold">Petunjuk:</p>
+                <p>Berikan penilaian Anda dengan mencentang salah satu kolom yang sesuai dengan pendapat Anda.</p>
+
+                <!-- Questionnaire -->
+                <div class="table-responsive">
+                    <table class="table text-dark table-bordered">
+                        <thead>
+                            <tr class="text-center">
+                                <th>Pertanyaan</th>
+                                <th>Sangat Setuju (SS)</th>
+                                <th>Setuju (S)</th>
+                                <th>Netral (N)</th>
+                                <th>Tidak Setuju (TS)</th>
+                                <th>Sangat Tidak Setuju (STS)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1. Guru menjelaskan materi pelajaran dengan jelas dan mudah dipahami.</td>
+                                <td class="text-center"><input type="radio" name="q1" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q1" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q1" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q1" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q1" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>2. Guru menggunakan berbagai metode pengajaran (ceramah, diskusi, praktik, dsb.) untuk membuat pelajaran menarik.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>3. Guru memberikan contoh yang relevan 
+                                    dengan kehidupan sehari-hari saat 
+                                    menjelaskan materi.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>4. Guru memberikan tugas yang 
+                                    membantu saya memahami materi 
+                                    dengan lebih baik.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>5. Guru memberikan waktu yang cukup 
+                                    untuk bertanya atau berdiskusi di kelas.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>6. Guru bersikap ramah dan sopan 
+                                    kepada semua murid.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>7. Guru menghargai pendapat murid saat 
+                                    berdiskusi.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>8. Guru memperhatikan kebutuhan dan 
+                                    kesulitan belajar murid secara individu.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>9. Guru tidak bersikap pilih kasih 
+                                    terhadap murid.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>10. Guru memberikan dorongan dan 
+                                    motivasi agar murid lebih semangat 
+                                    belajar.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>11. Guru menegakkan peraturan kelas 
+                                    dengan adil dan konsisten.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>12. Guru menjaga suasana kelas tetap 
+                                    kondusif untuk belajar.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>13. Guru mampu mengatasi murid yang 
+                                    mengganggu pelajaran dengan bijaksana.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>14. Guru memberikan penilaian dengan 
+                                    adil dan transparan.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td> 15. Guru memberikan umpan balik yang 
+                                    membantu saya memperbaiki kesalahan.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td> 16. Guru memberikan kesempatan untuk 
+                                    memperbaiki nilai atau tugas jika ada 
+                                    kesalahan.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>17. Saya merasa nyaman belajar dengan 
+                                    guru ini.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>18. Saya merasa terbantu oleh 
+                                    pengajaran guru ini untuk mencapai hasil 
+                                    belajar yang baik.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td>19. Saya ingin belajar lebih banyak dari 
+                                    guru ini di masa mendatang.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                            <tr>
+                                <td> 20. Secara keseluruhan, saya puas 
+                                    dengan cara guru mengajar di kelas.</td>
+                                <td class="text-center"><input type="radio" name="q2" value="SS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="S"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="N"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="TS"></td>
+                                <td class="text-center"><input type="radio" name="q2" value="STS"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-dark fw-bold px-4">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.2.3-dist\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>

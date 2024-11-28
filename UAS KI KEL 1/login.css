@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.bg-primary {
+    background-color: #1a237e !important; /* Adjust this to match the image background */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/background.jpg'); /* Replace with correct path */
+    background-size: cover; /* Ensures the background covers the whole screen */
+    background-position: center; /* Centers the background */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: white; /* Ensures text is readable */
+}
+
+
+img {
+    border-radius: 8px;
+}
